@@ -3,11 +3,7 @@ import { connectToDatabase } from "../utils/db";
 import BusinessCard from "../app/components/BusinessCard";
 
 const Home = ({ data }) => {
-  return (
-    <div>
-      <BusinessCard businessInfo={data} />
-    </div>
-  );
+  return <BusinessCard businessInfo={data} />;
 };
 
 export async function getServerSideProps(context) {
